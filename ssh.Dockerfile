@@ -6,6 +6,6 @@ RUN set -xv; \
 WORKDIR /
 COPY entrypoint.sh /
 RUN set -xv; \
-    chmod +x /entrypoint.sh
+    chmod +x /entrypoint.sh;
 
 ENTRYPOINT [ "/entrypoint.sh" ]
