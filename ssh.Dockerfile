@@ -1,7 +1,9 @@
 FROM alpine:latest
 
 RUN set -xv; \
-    apk --update add --no-cache openssh-client;
+    apk --update add --no-cache \
+      openssh-client \
+      netcat-openbsd;
 
 WORKDIR /
 COPY entrypoint.sh /
